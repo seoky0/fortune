@@ -12,11 +12,21 @@ gem 'jbuilder', '~> 2.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'slim-rails'
+gem 'annotate'
 
 group :development, :test do
   gem "rspec-rails"
   gem "factory_girl_rails"
-  gem 'byebug', platform: :mri
+  gem 'byebug'
+  gem 'better_errors'
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-rails'
+  gem 'pry-stack_explorer'
+  gem 'hirb'
+  gem 'awesome_print'
+  gem 'letter_opener'
 end
 
 group :development do
