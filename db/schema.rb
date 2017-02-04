@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170203134032) do
     t.string   "name",                      default: "", null: false
     t.string   "email",                     default: "", null: false
     t.integer  "gender",                    default: 0,  null: false
+    t.string   "encrypted_password",        default: "", null: false
     t.integer  "height"
     t.integer  "blood_type"
     t.integer  "residence_id"
@@ -24,7 +25,8 @@ ActiveRecord::Schema.define(version: 20170203134032) do
     t.integer  "educational_qualification"
     t.integer  "alcohol"
     t.integer  "cigarette"
-    t.string   "encrypted_password",        default: "", null: false
+    t.string   "provider"
+    t.string   "uid"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
