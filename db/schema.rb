@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20170203134032) do
     t.string   "email",                     default: "", null: false
     t.integer  "gender",                    default: 0,  null: false
     t.integer  "height"
-    t.string   "blood_type"
-    t.string   "residence"
-    t.string   "birthplace"
+    t.integer  "blood_type"
+    t.integer  "residence_id"
+    t.integer  "birthplace_id"
     t.string   "job_category"
     t.integer  "educational_qualification"
     t.integer  "alcohol"

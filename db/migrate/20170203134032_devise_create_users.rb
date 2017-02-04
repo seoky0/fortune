@@ -6,9 +6,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :email,              null: false, default: ""
       t.integer :gender,            null: false, default: 0
       t.integer :height
-      t.string :blood_type
-      t.string :residence
-      t.string :birthplace
+      t.integer :blood_type
+      t.integer :residence_id
+      t.integer :birthplace_id
       t.string :job_category
       t.integer :educational_qualification
       t.integer :alcohol
