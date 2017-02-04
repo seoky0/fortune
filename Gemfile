@@ -11,8 +11,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
+gem 'omniauth-facebook'
 gem 'slim-rails'
 gem 'annotate'
+gem 'config'
 
 group :development, :test do
   gem "rspec-rails"
