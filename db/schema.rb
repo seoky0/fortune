@@ -16,15 +16,17 @@ ActiveRecord::Schema.define(version: 20170203134032) do
     t.string   "name",                      default: "", null: false
     t.string   "email",                     default: "", null: false
     t.integer  "gender",                    default: 0,  null: false
+    t.string   "encrypted_password",        default: "", null: false
     t.integer  "height"
-    t.string   "blood_type"
-    t.string   "residence"
-    t.string   "birthplace"
+    t.integer  "blood_type"
+    t.integer  "residence_id"
+    t.integer  "birthplace_id"
     t.string   "job_category"
     t.integer  "educational_qualification"
     t.integer  "alcohol"
     t.integer  "cigarette"
-    t.string   "encrypted_password",        default: "", null: false
+    t.string   "provider"
+    t.string   "uid"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

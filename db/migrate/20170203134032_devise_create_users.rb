@@ -5,15 +5,17 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :name,               null: false, default: ""
       t.string :email,              null: false, default: ""
       t.integer :gender,            null: false, default: 0
+      t.string :encrypted_password, null: false, default: ""
       t.integer :height
-      t.string :blood_type
-      t.string :residence
-      t.string :birthplace
+      t.integer :blood_type
+      t.integer :residence_id
+      t.integer :birthplace_id
       t.string :job_category
       t.integer :educational_qualification
       t.integer :alcohol
       t.integer :cigarette
-      t.string :encrypted_password, null: false, default: ""
+      t.string :provider
+      t.string :uid
 
       ## Recoverable
       t.string   :reset_password_token
